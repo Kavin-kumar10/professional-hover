@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart cursor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader"></div>
+
+    <div class="content">
+        <h2>Testing hover</h2>
+        <div id="cursor"></div>
+        <script src="help.js"></script>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(window).on("load",function(){
+            $(".loader").fadeOut(1000);
+            $('.content').delay(2000).fadeIn(1000);
+        })
+    </script>
+</body>
+</html>
